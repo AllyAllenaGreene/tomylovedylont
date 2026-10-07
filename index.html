@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Ayangdut 💙</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         OPENING SCREEN
+    ========================== -->
+
+    <section class="hero">
+
+        <p class="small-text">
+            08 • 10 • 2004
+        </p>
+
+        <h1>Happy Birthday</h1>
+
+        <h2>Ayangdut 💙</h2>
+
+        <p class="intro">
+            I made a little something for you.
+            Take your time and open everything...
+            there are a few surprises waiting for you. 🥺
+        </p>
+
+        <button
+            id="surpriseButton"
+            onclick="openSurprise()">
+
+            Open your surprise 💙
+
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         HIDDEN SURPRISE
+    ========================== -->
+
+    <main id="surprise" class="hidden">
+
+
+        <!-- =========================
+             BIRTHDAY LETTER
+        ========================== -->
+
+        <section class="card">
+
+            <div class="heart">💙</div>
+
+            <h2>Happy birthday, sayang.</h2>
+
+            <p>
+                Happy birthday to my favorite person.
+                I hope today reminds you of how loved,
+                appreciated, and special you are.
+            </p>
+
+            <p>
+                I know life isn't always easy,
+                and sometimes you have days where
+                you feel tired or unsure of yourself.
+                But I hope you never forget how far
+                you've already come.
+            </p>
+
+            <p>
+                I'm proud of you, not only for the things
+                you achieve, but also for the person
+                you are becoming.
+            </p>
+
+            <p class="love">
+                I hope this new year of your life
+                brings you more happiness,
+                more beautiful memories,
+                and more reasons to smile. 💙
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             OUR STORY
+        ========================== -->
+
+        <section class="card">
+
+            <h2>Our Little Story 📖</h2>
+
+            <p>
+                Out of all the people in the world,
+                somehow our paths crossed.
+            </p>
+
+            <p>
+                And somewhere along the way,
+                you became someone incredibly important
+                to me.
+            </p>
+
+            <p>
+                We've had funny moments, annoying moments,
+                sweet moments, and probably enough
+                random moments to fill an entire book.
+            </p>
+
+            <p>
+                But that's what makes our story ours.
+                It doesn't have to be perfect.
+                It just has to be ours.
+            </p>
+
+            <p>
+                And if I could choose again,
+                I'd still choose finding you.
+            </p>
+
+            <p class="love">
+                Here's to everything we've been through
+                and everything that's still waiting for us. 💙
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             PHOTOS
+        ========================== -->
+
+        <section class="card">
+
+            <h2>Our Memories 📸</h2>
+
+            <p class="subtitle">
+                A few little memories I never want to forget.
+            </p>
+
+            <div class="photo-grid">
+
+                <div class="photo">
+                    <img
+                        src="photos/photo1.jpeg"
+                        alt="Our memory">
+                </div>
+
+                <div class="photo">
+                    <img
+                        src="photos/photo2.jpeg"
+                        alt="Our memory">
+                </div>
+
+                <div class="photo">
+                    <img
+                        src="photos/photo3.jpeg"
+                        alt="Our memory">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GOOGLE DRIVE VIDEO
+        ========================== -->
+
+        <section class="card video-card">
+
+            <h2>Something For You 🎬</h2>
+
+            <p>
+                I made something for you.
+                You can open it here. 💙
+            </p>
+
+            <a
+                class="movie-button"
+                href="https://drive.google.com/file/d/1BoqyqsES1vF_DLHdtlRJoAsZl_kT4VT9/view?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                🎬 Open the video
+
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             YOUTUBE VIDEO
+        ========================== -->
+
+        <section class="card video-card">
+
+            <h2>One More Thing... 🎬💙</h2>
+
+            <p>
+                And there's one more little thing
+                I want you to watch. 🥺
+            </p>
+
+            <div class="youtube-container">
+
+                <iframe
+                    src="VIDEOS/VIDEO.MP4"
+                    title="A little something for Ayangdut 💙"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <p class="video-caption">
+                I hope you like this one, sayang. 💙
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             FIRST GAME
+        ========================== -->
+
+        <section class="card">
+
+            <h2>How Well Do You Know Yourself? 👀</h2>
+
+            <p>
+                Let's start with an easy one.
+            </p>
+
+            <p>
+                What nickname do I call you?
+            </p>
+
+            <div class="game">
+
+                <input
+                    id="answer"
+                    type="text"
+                    placeholder="Your answer..."
+                    autocomplete="off">
+
+                <button onclick="checkAnswer()">
+                    Submit 💙
+                </button>
+
+                <p id="gameResult"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CROSSWORD
+        ========================== -->
+
+        <section class="crossword-section">
+
+            <h2>💙 A Little Crossword 💙</h2>
+
+            <p class="crossword-intro">
+                A tiny puzzle about us ♡
+            </p>
+
+
+            <div class="crossword-container">
+
+
+                <!-- NUMBERS -->
+
+                <div class="numbers">
+
+                    <div>
+                        1<br>
+                        <span>↓</span>
+                    </div>
+
+                    <div>
+                        2<br>
+                        <span>↓</span>
+                    </div>
+
+                    <div>
+                        3<br>
+                        <span>↓</span>
+                    </div>
+
+                    <div>
+                        4<br>
+                        <span>↓</span>
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     4 × 4 GRID
+
+                     DOWN:
+
+                     LOVE
+                     LENA
+                     DALI
+                     MENG
+                ========================== -->
+
+                <div class="crossword-grid">
+
+                    <!-- ROW 1 -->
+
+                    <input
+                        maxlength="1"
+                        data-answer="L"
+                        aria-label="Crossword 1">
+
+                    <input
+                        maxlength="1"
+                        data-answer="L"
+                        aria-label="Crossword 2">
+
+                    <input
+                        maxlength="1"
+                        data-answer="D"
+                        aria-label="Crossword 3">
+
+                    <input
+                        maxlength="1"
+                        data-answer="M"
+                        aria-label="Crossword 4">
+
+
+                    <!-- ROW 2 -->
+
+                    <input
+                        maxlength="1"
+                        data-answer="O"
+                        aria-label="Crossword 5">
+
+                    <input
+                        maxlength="1"
+                        data-answer="E"
+                        aria-label="Crossword 6">
+
+                    <input
+                        maxlength="1"
+                        data-answer="A"
+                        aria-label="Crossword 7">
+
+                    <input
+                        maxlength="1"
+                        data-answer="E"
+                        aria-label="Crossword 8">
+
+
+                    <!-- ROW 3 -->
+
+                    <input
+                        maxlength="1"
+                        data-answer="V"
+                        aria-label="Crossword 9">
+
+                    <input
+                        maxlength="1"
+                        data-answer="N"
+                        aria-label="Crossword 10">
+
+                    <input
+                        maxlength="1"
+                        data-answer="L"
+                        aria-label="Crossword 11">
+
+                    <input
+                        maxlength="1"
+                        data-answer="N"
+                        aria-label="Crossword 12">
+
+
+                    <!-- ROW 4 -->
+
+                    <input
+                        maxlength="1"
+                        data-answer="E"
+                        aria-label="Crossword 13">
+
+                    <input
+                        maxlength="1"
+                        data-answer="A"
+                        aria-label="Crossword 14">
+
+                    <input
+                        maxlength="1"
+                        data-answer="I"
+                        aria-label="Crossword 15">
+
+                    <input
+                        maxlength="1"
+                        data-answer="G"
+                        aria-label="Crossword 16">
+
+                </div>
+
+
+                <!-- CLUES -->
+
+                <div class="clues">
+
+                    <h3>↓ Down</h3>
+
+                    <div class="clue">
+                        <span>1.</span>
+                        <p>A feeling we both have</p>
+                    </div>
+
+                    <div class="clue">
+                        <span>2.</span>
+                        <p>My name</p>
+                    </div>
+
+                    <div class="clue">
+                        <span>3.</span>
+                        <p>First place we met</p>
+                    </div>
+
+                    <div class="clue">
+                        <span>4.</span>
+                        <p>Ur cat's name</p>
+                    </div>
+
+                </div>
+
+
+                <!-- CHECK -->
+
+                <button
+                    id="checkCrossword"
+                    onclick="checkCrossword()">
+
+                    Check Answers 💙
+
+                </button>
+
+                <p id="crosswordResult"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SECRET PASSWORD
+        ========================== -->
+
+        <section class="card secret-card">
+
+            <h2>One Last Thing... 🔐</h2>
+
+            <p>
+                If you've made it this far,
+                maybe you deserve to find
+                the last surprise.
+            </p>
+
+            <p>
+                But you'll need a password first. 👀
+            </p>
+
+
+            <input
+                id="password"
+                type="password"
+                placeholder="Enter the password..."
+                autocomplete="off">
+
+
+            <br>
+
+
+            <button onclick="unlockSecret()">
+                Unlock 💙
+            </button>
+
+
+            <p id="passwordResult"></p>
+
+
+            <div
+                id="secretMessage"
+                class="secret-message">
+
+                <h2>
+                    You found it. 🥺💙
+                </h2>
+
+                <p>
+                    Okay... one last thing.
+                </p>
+
+                <p>
+                    Tap the link below.
+                </p>
+
+                <a
+                    class="secret-link"
+                    href="https://drive.google.com/file/d/1rQBxEbnWo0s8kEHuA0j6P3lp026KDLud/view?usp=drivesdk"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    💌 Open your secret
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL MESSAGE
+        ========================== -->
+
+        <section class="final">
+
+            <div class="big-heart">
+                💙
+            </div>
+
+            <h2>
+                Happy Birthday, Ayangdut.
+            </h2>
+
+            <p>
+                I love you so much and I'm proud of you.
+            </p>
+
+            <p>
+                Here's to another year of you,
+                and hopefully a FOREVER of us.
+            </p>
+
+            <p class="love">
+                — Lena 💙
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
